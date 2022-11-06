@@ -42,11 +42,12 @@ public class Destroyzone : MonoBehaviour
                 bobj3 = Instantiate(Bobj3, transform.position, Quaternion.identity);
                 Destroy(bobj1);
                 Destroy(bobj2);
-            }
-            if(ChangeObj > 3)
-            {
                 ChangeObj = 0;
             }
+            /*if(ChangeObj > 3)
+            {
+                ChangeObj = 0;
+            }*/
         }
     }
 

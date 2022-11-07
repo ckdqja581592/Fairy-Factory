@@ -28,60 +28,37 @@ public class Destroyzone : MonoBehaviour
             if(ChangeObj == 1)
             {
                 bobj1 = Instantiate(Bobj1, transform.position, Quaternion.identity);
+                bobj1.tag = "Obj1";
                 Destroy(bobj2);
                 Destroy(bobj3);
             }
             if(ChangeObj == 2)
             {
                 bobj2 = Instantiate(Bobj2, transform.position, Quaternion.identity);
+                bobj2.tag = "Obj2";
                 Destroy(bobj1);
                 Destroy(bobj3);
             }
             if(ChangeObj == 3)
             {
                 bobj3 = Instantiate(Bobj3, transform.position, Quaternion.identity);
+                bobj3.tag = "Obj3";
                 Destroy(bobj1);
                 Destroy(bobj2);
                 ChangeObj = 0;
             }
-            /*if(ChangeObj > 3)
-            {
-                ChangeObj = 0;
-            }*/
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Obj1")
-            {
+        if(collision.gameObject.tag == "Obj1"){
                 Destroy(collision.gameObject);
                 Debug.Log("+1");
             }
         else{
-                Destroy(collision.gameObject);
+            Destroy(collision.gameObject);
                 Debug.Log("-1");
-            }
-        
-        if(collision.gameObject.tag == "Obj2")
-            {
-                Destroy(collision.gameObject);
-                Debug.Log("+1");
-            }
-            else{
-                Destroy(collision.gameObject);
-                Debug.Log("-1");
-            }
-        
-        if(collision.gameObject.tag == "Obj3")
-            {
-                Destroy(collision.gameObject);
-                Debug.Log("+1");
-            }
-            else{
-                Destroy(collision.gameObject);
-                Debug.Log("-1");
-            }
-        
+        }
     }
 }

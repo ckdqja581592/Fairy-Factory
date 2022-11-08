@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6566346262065132945}
   m_Layer: 0
   m_Name: "bot\uC804\uC790\uB808\uC778\uC9C0"
-  m_TagString: Obj3
+  m_TagString: Bobj3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

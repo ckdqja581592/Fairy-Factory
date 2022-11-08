@@ -7,6 +7,9 @@ TagManager:
   - Obj1
   - Obj2
   - Obj3
+  - Bobj1
+  - Bobj2
+  - Bobj3
   layers:
   - Default
   - TransparentFX

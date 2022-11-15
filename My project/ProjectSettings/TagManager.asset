@@ -10,6 +10,12 @@ TagManager:
   - Bobj1
   - Bobj2
   - Bobj3
+  - Bobj4
+  - Bobj5
+  - Bobj6
+  - Bobj7
+  - Bobj8
+  - Bobj9
   layers:
   - Default
   - TransparentFX

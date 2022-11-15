@@ -1,0 +1,79 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Destroyzone3 : MonoBehaviour
+{
+    [SerializeField]
+    GameObject Bobj1, Bobj2, Bobj3, Box3;
+
+    public GameObject[] HPbar;
+    GameObject equipHPbar;
+
+    int ChangeObj = 0;
+
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+        Change();
+    }
+
+    void Change()
+    {
+        int HPbarIndex = -1;
+        bool Keydown = Input.GetKeyDown(KeyCode.E);
+        if (Keydown)
+        {
+            ChangeObj += 1;
+            if (ChangeObj == 1)
+            {
+                if (Box3 != null)
+                {
+                    Destroy(GameObject.FindWithTag("Bobj9"));
+                }
+                Box3 = Bobj1;
+                GameObject obj = Instantiate(Box3, transform.position, Quaternion.identity);
+                HPbarIndex = 0;
+
+                if (equipHPbar != null)
+                {
+                    equipHPbar.SetActive(false);
+                }
+                equipHPbar = HPbar[HPbarIndex];
+                equipHPbar.SetActive(true);
+            }
+            else if (ChangeObj == 2)
+            {
+                Destroy(GameObject.FindWithTag("Bobj7"));
+                Box3 = Bobj2;
+                GameObject obj = Instantiate(Box3, transform.position, Quaternion.identity);
+                HPbarIndex = 1;
+                if (equipHPbar != null)
+                {
+                    equipHPbar.SetActive(false);
+                }
+                equipHPbar = HPbar[HPbarIndex];
+                equipHPbar.SetActive(true);
+            }
+            else if (ChangeObj == 3)
+            {
+                Destroy(GameObject.FindWithTag("Bobj8"));
+                Box3 = Bobj3;
+                GameObject obj = Instantiate(Box3, transform.position, Quaternion.identity);
+                ChangeObj = 0;
+                HPbarIndex = 2;
+                if (equipHPbar != null)
+                {
+                    equipHPbar.SetActive(false);
+                }
+                equipHPbar = HPbar[HPbarIndex];
+                equipHPbar.SetActive(true);
+            }
+        }
+    }
+}

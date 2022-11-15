@@ -24,9 +24,6 @@ public class Spawn : MonoBehaviour
         if(Keydown)
         {
             SpawnObj = Random.Range(1,4);
-            /*obj1 = GameObject.FindWithTag("Obj1");
-            obj2 = GameObject.FindWithTag("Obj2");
-            obj3 = GameObject.FindWithTag("Obj3");*/
 
             switch (SpawnObj)
             {

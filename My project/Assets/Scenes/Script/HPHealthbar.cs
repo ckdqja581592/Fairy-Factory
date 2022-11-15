@@ -72,5 +72,113 @@ public class HPHealthbar : MonoBehaviour
                 HealthGauge3.health3 -= 2f;
             }
         }
+        if (Box.gameObject.tag == "Bobj4")
+        {
+            if (collision.gameObject.tag == "Obj1")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge4.health4 += 2f;
+            }
+            else if (collision.gameObject.tag == "Obj2")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge4.health4 -= 2f;
+            }
+            else if (collision.gameObject.tag == "Obj3")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge4.health4 -= 2f;
+            }
+        }
+        if (Box.gameObject.tag == "Bobj5")
+        {
+            if (collision.gameObject.tag == "Obj2")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge5.health5 += 2f;
+            }
+            else if (collision.gameObject.tag == "Obj1")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge5.health5 -= 2f;
+            }
+            else if (collision.gameObject.tag == "Obj3")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge5.health5 -= 2f;
+            }
+        }
+        if (Box.gameObject.tag == "Bobj6")
+        {
+            if (collision.gameObject.tag == "Obj3")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge6.health6 += 2f;
+            }
+            else if (collision.gameObject.tag == "Obj1")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge6.health6 -= 2f;
+            }
+            else if (collision.gameObject.tag == "Obj2")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge6.health6 -= 2f;
+            }
+        }
+        if (Box.gameObject.tag == "Bobj7")
+        {
+            if (collision.gameObject.tag == "Obj1")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge7.health7 += 2f;
+            }
+            else if (collision.gameObject.tag == "Obj2")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge7.health7 -= 2f;
+            }
+            else if (collision.gameObject.tag == "Obj3")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge7.health7 -= 2f;
+            }
+        }
+        if (Box.gameObject.tag == "Bobj8")
+        {
+            if (collision.gameObject.tag == "Obj2")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge8.health8 += 2f;
+            }
+            else if (collision.gameObject.tag == "Obj1")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge8.health8 -= 2f;
+            }
+            else if (collision.gameObject.tag == "Obj3")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge8.health8 -= 2f;
+            }
+        }
+        if (Box.gameObject.tag == "Bobj9")
+        {
+            if (collision.gameObject.tag == "Obj3")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge9.health9 += 2f;
+            }
+            else if (collision.gameObject.tag == "Obj1")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge9.health9 -= 2f;
+            }
+            else if (collision.gameObject.tag == "Obj2")
+            {
+                Destroy(collision.gameObject);
+                HealthGauge9.health9 -= 2f;
+            }
+        }
     }
 }

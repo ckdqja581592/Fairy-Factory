@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Destroyzone : MonoBehaviour
+public class Destroyzone1 : MonoBehaviour
 {
     [SerializeField]
-    GameObject Bobj1, Bobj2, Bobj3, Box;
+    GameObject Bobj1, Bobj2, Bobj3, Box1;
 
     public GameObject[] HPbar;
     GameObject equipHPbar;
@@ -31,12 +31,12 @@ public class Destroyzone : MonoBehaviour
             ChangeObj +=1;
             if(ChangeObj == 1)
             {
-                if (Box != null)
+                if (Box1 != null)
                 {
                     Destroy(GameObject.FindWithTag("Bobj3"));
                 }
-                Box = Bobj1;
-                GameObject obj= Instantiate(Box, transform.position, Quaternion.identity);
+                Box1 = Bobj1;
+                GameObject obj= Instantiate(Box1, transform.position, Quaternion.identity);
                 HPbarIndex = 0;
 
                 if(equipHPbar !=null)     {
@@ -47,8 +47,8 @@ public class Destroyzone : MonoBehaviour
             else if(ChangeObj == 2)
             {
                 Destroy(GameObject.FindWithTag("Bobj1"));
-                Box = Bobj2;
-                GameObject obj = Instantiate(Box, transform.position, Quaternion.identity);
+                Box1 = Bobj2;
+                GameObject obj = Instantiate(Box1, transform.position, Quaternion.identity);
                 HPbarIndex = 1;
                 if(equipHPbar !=null)     {
                     equipHPbar.SetActive(false);}
@@ -58,8 +58,8 @@ public class Destroyzone : MonoBehaviour
             else if (ChangeObj == 3)
             {
                 Destroy(GameObject.FindWithTag("Bobj2"));
-                Box = Bobj3;
-                GameObject obj = Instantiate(Box, transform.position, Quaternion.identity);
+                Box1 = Bobj3;
+                GameObject obj = Instantiate(Box1, transform.position, Quaternion.identity);
                 ChangeObj = 0;
                 HPbarIndex = 2;
                 if(equipHPbar !=null)     {

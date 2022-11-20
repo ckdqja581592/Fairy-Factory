@@ -11,18 +11,28 @@ public class Spawn : MonoBehaviour
     
     void Start()
     {
+        StartCoroutine(CreatepoopRoutine());
     }
 
     void Update()
     {
-        SpawnPlay();
+        //SpawnPlay();
+    }
+
+    IEnumerator CreatepoopRoutine(){
+        while(true)
+        {
+            SpawnPlay();
+            yield return new WaitForSeconds(1);
+        }
     }
     void SpawnPlay()
     {
-        bool Keydown = Input.GetKeyDown(KeyCode.S);
+        //bool Keydown = Input.GetKeyDown(KeyCode.S);
 
-        if(Keydown)
-        {
+        //if(Keydown)
+        //{
+            //Vector3 pos = new Vector3(0,6,0);
             SpawnObj = Random.Range(1,4);
 
             switch (SpawnObj)
@@ -37,6 +47,6 @@ public class Spawn : MonoBehaviour
                 Instantiate(obj3, transform.position, Quaternion.identity);
                 break;
             }
-        }
+        //}
     }
 }

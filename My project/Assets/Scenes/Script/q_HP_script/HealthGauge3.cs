@@ -20,8 +20,9 @@ public class HealthGauge3 : MonoBehaviour
         if(health3 < 0){
             health3 = 0;
         }
-        else if(health3 > 10){
+        else if(health3 == 10){
             health3 = 0;
+            Score.scoreinAmount +=1;
         }
     }
 }

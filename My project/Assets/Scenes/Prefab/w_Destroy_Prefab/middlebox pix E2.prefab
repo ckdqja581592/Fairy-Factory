@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5053572893005540506}
   - component: {fileID: 5021334829349732750}
   - component: {fileID: 1798846860774093192}
-  - component: {fileID: -4771954584345573506}
+  - component: {fileID: 4412841214473550447}
   m_Layer: 7
   m_Name: middlebox pix E2
   m_TagString: Bobj8
@@ -127,7 +127,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.04, y: 1.04}
   m_EdgeRadius: 0
---- !u!95 &-4771954584345573506
+--- !u!95 &4412841214473550447
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0

@@ -24,12 +24,16 @@ public class Spawn : MonoBehaviour
         while(true)
         {
             SpawnPlay();
-            if(Score.scoreinAmount <= 5){
+            if(Score.scoreinAmount <= 3){
                 SpawnTime = Random.Range(3.0f, 4.0f);
                 yield return new WaitForSeconds(SpawnTime);
             }
-            if(Score.scoreinAmount > 5 && Score.scoreinAmount < 10){
+            if(Score.scoreinAmount > 3 && Score.scoreinAmount < 5){
                 SpawnTime = Random.Range(1.0f, 2.0f);
+                yield return new WaitForSeconds(SpawnTime);
+            }
+            if(Score.scoreinAmount >= 5){
+                SpawnTime = Random.Range(0.3f, 1.0f);
                 yield return new WaitForSeconds(SpawnTime);
             }
         }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5775655214385531282}
   - component: {fileID: 276801679028321516}
   - component: {fileID: 9081104564117168055}
-  - component: {fileID: 4428396798652120240}
+  - component: {fileID: 6462719096885256294}
   m_Layer: 7
   m_Name: smallbox pix E3
   m_TagString: Bobj9
@@ -127,7 +127,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 0.64}
   m_EdgeRadius: 0
---- !u!95 &4428396798652120240
+--- !u!95 &6462719096885256294
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0

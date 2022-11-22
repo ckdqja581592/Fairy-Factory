@@ -35,7 +35,7 @@ public class Destroyzone2 : MonoBehaviour
             {
                 if (Box2 != null)
                 {
-                    Destroy(GameObject.FindWithTag("Bobj6"));
+                    Destroy(GameObject.FindWithTag("Bobj9"));
                 }
                 Box2 = Bobj1;
                 GameObject obj = Instantiate(Box2, transform.position, Quaternion.identity);
@@ -50,7 +50,7 @@ public class Destroyzone2 : MonoBehaviour
             }
             else if (ChangeObj == 2)
             {
-                Destroy(GameObject.FindWithTag("Bobj4"));
+                Destroy(GameObject.FindWithTag("Bobj7"));
                 Box2 = Bobj2;
                 GameObject obj = Instantiate(Box2, transform.position, Quaternion.identity);
                 HPbarIndex = 1;
@@ -63,7 +63,7 @@ public class Destroyzone2 : MonoBehaviour
             }
             else if (ChangeObj == 3)
             {
-                Destroy(GameObject.FindWithTag("Bobj5"));
+                Destroy(GameObject.FindWithTag("Bobj8"));
                 Box2 = Bobj3;
                 GameObject obj = Instantiate(Box2, transform.position, Quaternion.identity);
                 ChangeObj = 0;

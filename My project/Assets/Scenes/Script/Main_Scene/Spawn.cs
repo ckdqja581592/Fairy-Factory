@@ -8,6 +8,7 @@ public class Spawn : MonoBehaviour
     GameObject obj1, obj2, obj3;
 
     int SpawnObj;
+    float SpawnTime;
     
     void Start()
     {
@@ -23,7 +24,8 @@ public class Spawn : MonoBehaviour
         while(true)
         {
             SpawnPlay();
-            yield return new WaitForSeconds(1);
+            SpawnTime = Random.Range(0.5f, 1.0f);
+            yield return new WaitForSeconds(SpawnTime);
         }
     }
     void SpawnPlay()

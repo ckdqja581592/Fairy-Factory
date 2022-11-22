@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 70805836e5776e8419e76b4e1299b613
+guid: dc26e5292bfc5384d92acc9049380f26
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tallbox pix_0
+      name: box middle pix open (1)_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 251
-        height: 256
+        x: 42
+        y: 95
+        width: 204
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d369668e6d2f57f44a39595e68244462
-      internalID: -1490992643
+      spriteID: 8ccbd8d0f83274b498d16bca503d1e77
+      internalID: -1624430129
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tallbox pix_0: -1490992643
+      box middle pix open (1)_0: -1624430129
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -15,7 +15,6 @@ public class Destroyzone1 : MonoBehaviour
 
     void Start()
     {
-        
     }
     
     void Update()

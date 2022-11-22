@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class HPHealthbar : MonoBehaviour
 {
     public GameObject Box;
+    public Animator animator;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -28,11 +29,13 @@ public class HPHealthbar : MonoBehaviour
             else if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("booming");
                 HealthGauge1.health1 = 0f;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("booming");
                 HealthGauge1.health1 = 0f;
             }
         }
@@ -46,11 +49,13 @@ public class HPHealthbar : MonoBehaviour
             else if (collision.gameObject.tag == "Obj1")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("MBoom");
                 HealthGauge2.health2 = 0f;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("MBoom");
                 HealthGauge2.health2 = 0f;
             }
         }
@@ -64,11 +69,13 @@ public class HPHealthbar : MonoBehaviour
             else if (collision.gameObject.tag == "Obj1")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("SBoom");
                 HealthGauge3.health3 = 0f;
             }
             else if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("SBoom");
                 HealthGauge3.health3 = 0f;
             }
         }
@@ -82,11 +89,13 @@ public class HPHealthbar : MonoBehaviour
             else if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("booming");
                 HealthGauge4.health4 = 0f;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("booming");
                 HealthGauge4.health4 = 0f;
             }
         }
@@ -100,11 +109,13 @@ public class HPHealthbar : MonoBehaviour
             else if (collision.gameObject.tag == "Obj1")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("MBoom");
                 HealthGauge5.health5 = 0f;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("MBoom");
                 HealthGauge5.health5 = 0f;
             }
         }
@@ -118,11 +129,13 @@ public class HPHealthbar : MonoBehaviour
             else if (collision.gameObject.tag == "Obj1")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("SBoom");
                 HealthGauge6.health6 = 0f;
             }
             else if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("SBoom");
                 HealthGauge6.health6 = 0f;
             }
         }
@@ -136,11 +149,13 @@ public class HPHealthbar : MonoBehaviour
             else if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("booming");
                 HealthGauge7.health7 = 0f;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("booming");
                 HealthGauge7.health7 = 0f;
             }
         }
@@ -154,11 +169,13 @@ public class HPHealthbar : MonoBehaviour
             else if (collision.gameObject.tag == "Obj1")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("MBoom");
                 HealthGauge8.health8 = 0f;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("MBoom");
                 HealthGauge8.health8 -= 2f;
             }
         }
@@ -172,11 +189,13 @@ public class HPHealthbar : MonoBehaviour
             else if (collision.gameObject.tag == "Obj1")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("SBoom");
                 HealthGauge9.health9 = 0f;
             }
             else if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
+                animator.SetTrigger("SBoom");
                 HealthGauge9.health9 = 0f;
             }
         }

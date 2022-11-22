@@ -24,8 +24,14 @@ public class Spawn : MonoBehaviour
         while(true)
         {
             SpawnPlay();
-            SpawnTime = Random.Range(0.5f, 1.0f);
-            yield return new WaitForSeconds(SpawnTime);
+            if(Score.scoreinAmount <= 5){
+                SpawnTime = Random.Range(3.0f, 4.0f);
+                yield return new WaitForSeconds(SpawnTime);
+            }
+            if(Score.scoreinAmount > 5 && Score.scoreinAmount < 10){
+                SpawnTime = Random.Range(1.0f, 2.0f);
+                yield return new WaitForSeconds(SpawnTime);
+            }
         }
     }
     void SpawnPlay()

@@ -19,7 +19,7 @@ public class HPHealthbar : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        HeartSystem hs = gameObject.AddComponent<HeartSystem>();
+        //HeartSystem hs = gameObject.AddComponent<HeartSystem>();
 
         if (Box.gameObject.tag == "Bobj1")
         {
@@ -33,14 +33,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("booming");
                 HealthGauge1.health1 = 0f;
-                hs.Damage();
+                HeartSystem.life += 1;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("booming");
                 HealthGauge1.health1 = 0f;
-                hs.Damage();
+                HeartSystem.life += 1;
             }
         }
         if (Box.gameObject.tag == "Bobj2")
@@ -55,12 +55,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("MBoom");
                 HealthGauge2.health2 = 0f;
+                HeartSystem.life += 1;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("MBoom");
                 HealthGauge2.health2 = 0f;
+                HeartSystem.life += 1;
             }
         }
         if (Box.gameObject.tag == "Bobj3")
@@ -75,12 +77,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("SBoom");
                 HealthGauge3.health3 = 0f;
+                HeartSystem.life += 1;
             }
             else if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("SBoom");
                 HealthGauge3.health3 = 0f;
+                HeartSystem.life += 1;
             }
         }
         if (Box.gameObject.tag == "Bobj4")
@@ -95,12 +99,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("booming");
                 HealthGauge4.health4 = 0f;
+                HeartSystem.life += 1;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("booming");
                 HealthGauge4.health4 = 0f;
+                HeartSystem.life += 1;
             }
         }
         if (Box.gameObject.tag == "Bobj5")
@@ -115,12 +121,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("MBoom");
                 HealthGauge5.health5 = 0f;
+                HeartSystem.life += 1;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("MBoom");
                 HealthGauge5.health5 = 0f;
+                HeartSystem.life += 1;
             }
         }
         if (Box.gameObject.tag == "Bobj6")
@@ -135,12 +143,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("SBoom");
                 HealthGauge6.health6 = 0f;
+                HeartSystem.life += 1;
             }
             else if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("SBoom");
                 HealthGauge6.health6 = 0f;
+                HeartSystem.life += 1;
             }
         }
         if (Box.gameObject.tag == "Bobj7")
@@ -155,12 +165,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("booming");
                 HealthGauge7.health7 = 0f;
+                HeartSystem.life += 1;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("booming");
                 HealthGauge7.health7 = 0f;
+                HeartSystem.life += 1;
             }
         }
         if (Box.gameObject.tag == "Bobj8")
@@ -175,12 +187,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("MBoom");
                 HealthGauge8.health8 = 0f;
+                HeartSystem.life += 1;
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("MBoom");
                 HealthGauge8.health8 = 0f;
+                HeartSystem.life += 1;
             }
         }
         if (Box.gameObject.tag == "Bobj9")
@@ -195,12 +209,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("SBoom");
                 HealthGauge9.health9 = 0f;
+                HeartSystem.life += 1;
             }
             else if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("SBoom");
                 HealthGauge9.health9 = 0f;
+                HeartSystem.life += 1;
             }
         }
     }

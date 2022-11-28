@@ -651,7 +651,6 @@ GameObject:
   - component: {fileID: 489016273}
   - component: {fileID: 489016272}
   - component: {fileID: 489016274}
-  - component: {fileID: 489016275}
   m_Layer: 7
   m_Name: Destroyzone1
   m_TagString: Untagged
@@ -720,23 +719,6 @@ MonoBehaviour:
   - {fileID: 2093380409}
   - {fileID: 1929421472}
   - {fileID: 2137500929}
---- !u!114 &489016275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489016271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c511b52fd1c9e4243aa195bb3eea4350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hearts:
-  - {fileID: 858305819}
-  - {fileID: 1917378611}
-  - {fileID: 880449130}
-  life: 3
 --- !u!1 &651637789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1073,6 @@ GameObject:
   - component: {fileID: 835220786}
   - component: {fileID: 835220785}
   - component: {fileID: 835220787}
-  - component: {fileID: 835220788}
   m_Layer: 7
   m_Name: Destroyzone3
   m_TagString: Untagged
@@ -1160,23 +1141,6 @@ MonoBehaviour:
   - {fileID: 782293818}
   - {fileID: 53448887}
   - {fileID: 469297970}
---- !u!114 &835220788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835220783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c511b52fd1c9e4243aa195bb3eea4350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hearts:
-  - {fileID: 858305819}
-  - {fileID: 1917378611}
-  - {fileID: 880449130}
-  life: 3
 --- !u!1 &858305819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,6 +1389,7 @@ GameObject:
   - component: {fileID: 1053481879}
   - component: {fileID: 1053481878}
   - component: {fileID: 1053481877}
+  - component: {fileID: 1053481881}
   m_Layer: 5
   m_Name: Canvas (5)
   m_TagString: Untagged
@@ -1530,6 +1495,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1053481881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053481876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c511b52fd1c9e4243aa195bb3eea4350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1570287353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,7 +1725,6 @@ GameObject:
   - component: {fileID: 1825891761}
   - component: {fileID: 1825891760}
   - component: {fileID: 1825891762}
-  - component: {fileID: 1825891763}
   m_Layer: 7
   m_Name: Destroyzone2
   m_TagString: Untagged
@@ -1817,23 +1793,6 @@ MonoBehaviour:
   - {fileID: 651637789}
   - {fileID: 2058019073}
   - {fileID: 832084745}
---- !u!114 &1825891763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825891758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c511b52fd1c9e4243aa195bb3eea4350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hearts:
-  - {fileID: 858305819}
-  - {fileID: 1917378611}
-  - {fileID: 880449130}
-  life: 3
 --- !u!1 &1917378611
 GameObject:
   m_ObjectHideFlags: 0

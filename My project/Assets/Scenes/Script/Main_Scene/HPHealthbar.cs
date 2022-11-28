@@ -19,6 +19,8 @@ public class HPHealthbar : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        HeartSystem hs = gameObject.AddComponent<HeartSystem>();
+
         if (Box.gameObject.tag == "Bobj1")
         {
             if (collision.gameObject.tag == "Obj1")
@@ -31,12 +33,14 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 animator.SetTrigger("booming");
                 HealthGauge1.health1 = 0f;
+                hs.Damage();
             }
             else if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("booming");
                 HealthGauge1.health1 = 0f;
+                hs.Damage();
             }
         }
         if (Box.gameObject.tag == "Bobj2")
@@ -176,7 +180,7 @@ public class HPHealthbar : MonoBehaviour
             {
                 Destroy(collision.gameObject);
                 animator.SetTrigger("MBoom");
-                HealthGauge8.health8 -= 2f;
+                HealthGauge8.health8 = 0f;
             }
         }
         if (Box.gameObject.tag == "Bobj9")

@@ -16,6 +16,9 @@ TagManager:
   - Bobj7
   - Bobj8
   - Bobj9
+  - HP1
+  - HP2
+  - HP3
   layers:
   - Default
   - TransparentFX

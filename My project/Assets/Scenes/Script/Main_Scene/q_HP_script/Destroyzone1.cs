@@ -8,6 +8,7 @@ public class Destroyzone1 : MonoBehaviour
     [SerializeField]
     GameObject Bobj1, Bobj2, Bobj3, Box1;
 
+    
     public GameObject[] HPbar;
     GameObject equipHPbar;
 

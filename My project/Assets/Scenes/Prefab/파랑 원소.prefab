@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 195257682320709638}
   - component: {fileID: 4453807497149661573}
   - component: {fileID: 35115240603192035}
+  - component: {fileID: -5044146021591082843}
   m_Layer: 0
   m_Name: "\uD30C\uB791 \uC6D0\uC18C"
   m_TagString: Obj3
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c897f2b551571a04e861698c9ef5f0ec, type: 3}
-  m_Color: {r: 0.4198113, g: 0.5631521, b: 1, a: 1}
+  m_Color: {r: 0.30015132, g: 0.44917008, b: 0.8962264, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -133,3 +134,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5044146021591082843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6789646902801135715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bbf51445abb3614798d69d7d4523479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

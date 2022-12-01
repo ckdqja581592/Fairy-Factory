@@ -12,6 +12,8 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public CanvasGroup mainGroup;
     public CanvasGroup optionGroup;
 
+    public AudioSource msc;
+
     private void Start()
     {
         defaultScale = buttonScale.localScale;
@@ -75,5 +77,9 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerExit(PointerEventData evenData)
     {
         buttonScale.localScale = defaultScale;
+    }
+    public void Volumeoff(float volume)
+    {
+        msc.volume = 0f;    
     }
 }

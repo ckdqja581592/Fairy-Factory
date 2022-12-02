@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class HeartSystem : MonoBehaviour
 {
@@ -9,6 +11,11 @@ public class HeartSystem : MonoBehaviour
     Image Heart2;
     Image Heart3;
     public static int life;
+    public bool isPause = false;
+
+    public GameObject Spawn;
+
+    public CanvasGroup GameoverGroup;
     void start()
     {
         Heart1 = GetComponent<Image>();
@@ -32,7 +39,16 @@ public class HeartSystem : MonoBehaviour
         else if(life == 3)
         {
             Destroy(GameObject.FindWithTag("HP1"));
-            life = 3;
+            CanvasGroupOn(GameoverGroup);
+            
+            Spawn.GetComponent<Spawn>().IsPause();
         }
+    }
+
+    public void CanvasGroupOn(CanvasGroup cg)
+    {
+        cg.alpha = 1;
+        cg.interactable = true;
+        cg.blocksRaycasts = true;
     }
 }

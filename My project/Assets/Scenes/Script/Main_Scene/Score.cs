@@ -7,15 +7,27 @@ using TMPro;
 public class Score : MonoBehaviour
 {
     TextMeshProUGUI text;
-    public static int scoreinAmount;
+    TextMeshProUGUI hightext;
+    public static int scoreinAmount = 0;
+
+    public static int highscore = 0;
+    public string KeyString = "HighScore";
     
     void Start()
     {
-        text = GetComponent<TextMeshProUGUI>();        
+        text = GetComponent<TextMeshProUGUI>();
+        hightext = GetComponent<TextMeshProUGUI>();
+        highscore = PlayerPrefs.GetInt(KeyString,0);
+        hightext.text = "High Score: " + highscore.ToString("0");
     }
 
     void Update()
     {
         text.text = scoreinAmount.ToString();
+        highscore = 0;
+        if(scoreinAmount > highscore)
+        {
+            PlayerPrefs.SetInt(KeyString, scoreinAmount);
+        }
     }
 }

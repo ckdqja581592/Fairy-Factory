@@ -10,6 +10,9 @@ public class Spawn : MonoBehaviour
     int SpawnObj;
     float SpawnTime;
     
+    
+    public bool isPause = false;
+
     void Start()
     {
         StartCoroutine(CreatepoopRoutine());
@@ -40,25 +43,32 @@ public class Spawn : MonoBehaviour
     }
     void SpawnPlay()
     {
-        //bool Keydown = Input.GetKeyDown(KeyCode.S);
+        SpawnObj = Random.Range(1,4);
 
-        //if(Keydown)
-        //{
-            //Vector3 pos = new Vector3(0,6,0);
-            SpawnObj = Random.Range(1,4);
-
-            switch (SpawnObj)
-            {
-                case 1 :
-                Instantiate(obj1, transform.position, Quaternion.identity);
-                break;
-                case 2 :
-                Instantiate(obj2, transform.position, Quaternion.identity);
-                break;
-                case 3 :
-                Instantiate(obj3, transform.position, Quaternion.identity);
-                break;
-            }
-        //}
+        switch (SpawnObj)
+        {
+            case 1 :
+            Instantiate(obj1, transform.position, Quaternion.identity);
+            break;
+            case 2 :
+            Instantiate(obj2, transform.position, Quaternion.identity);
+            break;
+            case 3 :
+            Instantiate(obj3, transform.position, Quaternion.identity);
+            break;
+        }
+    }
+    public void IsPause()
+    {
+        isPause =!isPause;
+        if(isPause)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+        Time.fixedDeltaTime = 0.02f* Time.timeScale;
     }
 }

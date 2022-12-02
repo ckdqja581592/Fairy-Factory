@@ -78,8 +78,4 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         buttonScale.localScale = defaultScale;
     }
-    public void Volumeoff(float volume)
-    {
-        msc.volume = 0f;    
-    }
 }

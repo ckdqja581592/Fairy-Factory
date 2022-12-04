@@ -36,7 +36,7 @@ public class HPHealthbar : MonoBehaviour
             if (collision.gameObject.tag == "Obj1")
             {
                 Destroy(collision.gameObject);
-                HealthGauge1.health1 += 2f;
+                HealthGauge1.health1 += 3.5f;
                 successSource.PlayOneShot(successclip);
                 if(HealthGauge1.health1 == 10f){
                     pointSource.PlayOneShot(pointclip);
@@ -65,7 +65,7 @@ public class HPHealthbar : MonoBehaviour
             if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
-                HealthGauge2.health2 += 2f;
+                HealthGauge2.health2 += 3.5f;
                 successSource.PlayOneShot(successclip);
                 if(HealthGauge2.health2 == 10f){
                     pointSource.PlayOneShot(pointclip);
@@ -94,7 +94,7 @@ public class HPHealthbar : MonoBehaviour
             if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
-                HealthGauge3.health3 += 2f;
+                HealthGauge3.health3 += 3.5f;
                 successSource.PlayOneShot(successclip);
                 if(HealthGauge3.health3 == 10f){
                     pointSource.PlayOneShot(pointclip);
@@ -123,7 +123,7 @@ public class HPHealthbar : MonoBehaviour
             if (collision.gameObject.tag == "Obj1")
             {
                 Destroy(collision.gameObject);
-                HealthGauge4.health4 += 2f;
+                HealthGauge4.health4 += 3.5f;
                 successSource.PlayOneShot(successclip);
                 if(HealthGauge4.health4 == 10f){
                     pointSource.PlayOneShot(pointclip);
@@ -152,7 +152,7 @@ public class HPHealthbar : MonoBehaviour
             if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
-                HealthGauge5.health5 += 2f;
+                HealthGauge5.health5 += 3.5f;
                 successSource.PlayOneShot(successclip);
                 if(HealthGauge5.health5 == 10f){
                     pointSource.PlayOneShot(pointclip);
@@ -181,7 +181,7 @@ public class HPHealthbar : MonoBehaviour
             if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
-                HealthGauge6.health6 += 2f;
+                HealthGauge6.health6 += 3.5f;
                 successSource.PlayOneShot(successclip);
                 if(HealthGauge6.health6 == 10f){
                     pointSource.PlayOneShot(pointclip);
@@ -210,7 +210,7 @@ public class HPHealthbar : MonoBehaviour
             if (collision.gameObject.tag == "Obj1")
             {
                 Destroy(collision.gameObject);
-                HealthGauge7.health7 += 2f;
+                HealthGauge7.health7 += 3.5f;
                 successSource.PlayOneShot(successclip);
                 if(HealthGauge7.health7 == 10f){
                     pointSource.PlayOneShot(pointclip);
@@ -239,7 +239,7 @@ public class HPHealthbar : MonoBehaviour
             if (collision.gameObject.tag == "Obj2")
             {
                 Destroy(collision.gameObject);
-                HealthGauge8.health8 += 2f;
+                HealthGauge8.health8 += 3.5f;
                 successSource.PlayOneShot(successclip);
                 if(HealthGauge8.health8 == 10f){
                     pointSource.PlayOneShot(pointclip);
@@ -268,7 +268,7 @@ public class HPHealthbar : MonoBehaviour
             if (collision.gameObject.tag == "Obj3")
             {
                 Destroy(collision.gameObject);
-                HealthGauge9.health9 += 2f;
+                HealthGauge9.health9 += 3.5f;
                 successSource.PlayOneShot(successclip);
                 if(HealthGauge9.health9 == 10f){
                     pointSource.PlayOneShot(pointclip);

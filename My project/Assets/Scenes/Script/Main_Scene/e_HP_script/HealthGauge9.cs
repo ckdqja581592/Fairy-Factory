@@ -21,7 +21,7 @@ public class HealthGauge9 : MonoBehaviour
         {
             health9 = 0;
         }
-        else if (health9 == 10)
+        else if (health9 >= 10)
         {
             health9 = 0;
             Score.scoreinAmount +=1;

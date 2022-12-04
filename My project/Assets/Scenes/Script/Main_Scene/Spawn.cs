@@ -31,12 +31,12 @@ public class Spawn : MonoBehaviour
                 SpawnTime = Random.Range(3.0f, 4.0f);
                 yield return new WaitForSeconds(SpawnTime);
             }
-            if(Score.scoreinAmount > 3 && Score.scoreinAmount < 5){
-                SpawnTime = Random.Range(1.0f, 2.0f);
+            if(Score.scoreinAmount > 3 && Score.scoreinAmount < 7){
+                SpawnTime = Random.Range(2.5f, 3.5f);
                 yield return new WaitForSeconds(SpawnTime);
             }
-            if(Score.scoreinAmount >= 5){
-                SpawnTime = Random.Range(0.3f, 1.0f);
+            if(Score.scoreinAmount >= 7){
+                SpawnTime = Random.Range(2.0f, 2.5f);
                 yield return new WaitForSeconds(SpawnTime);
             }
         }

@@ -38,7 +38,7 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 HealthGauge1.health1 += 3.5f;
                 successSource.PlayOneShot(successclip);
-                if(HealthGauge1.health1 == 10f){
+                if(HealthGauge1.health1 >= 10f){
                     pointSource.PlayOneShot(pointclip);
                     animator.SetTrigger("Fairy");
                 }
@@ -67,7 +67,7 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 HealthGauge2.health2 += 3.5f;
                 successSource.PlayOneShot(successclip);
-                if(HealthGauge2.health2 == 10f){
+                if(HealthGauge2.health2 >= 10f){
                     pointSource.PlayOneShot(pointclip);
                     animator.SetTrigger("Fairy");
                 }
@@ -96,7 +96,7 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 HealthGauge3.health3 += 3.5f;
                 successSource.PlayOneShot(successclip);
-                if(HealthGauge3.health3 == 10f){
+                if(HealthGauge3.health3 >= 10f){
                     pointSource.PlayOneShot(pointclip);
                     animator.SetTrigger("Fairy");
                 }
@@ -125,7 +125,7 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 HealthGauge4.health4 += 3.5f;
                 successSource.PlayOneShot(successclip);
-                if(HealthGauge4.health4 == 10f){
+                if(HealthGauge4.health4 >= 10f){
                     pointSource.PlayOneShot(pointclip);
                     animator.SetTrigger("Fairy");
                 }
@@ -154,7 +154,7 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 HealthGauge5.health5 += 3.5f;
                 successSource.PlayOneShot(successclip);
-                if(HealthGauge5.health5 == 10f){
+                if(HealthGauge5.health5 >= 10f){
                     pointSource.PlayOneShot(pointclip);
                     animator.SetTrigger("Fairy");
                 }
@@ -183,7 +183,7 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 HealthGauge6.health6 += 3.5f;
                 successSource.PlayOneShot(successclip);
-                if(HealthGauge6.health6 == 10f){
+                if(HealthGauge6.health6 >= 10f){
                     pointSource.PlayOneShot(pointclip);
                     animator.SetTrigger("Fairy");
                 }
@@ -212,7 +212,7 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 HealthGauge7.health7 += 3.5f;
                 successSource.PlayOneShot(successclip);
-                if(HealthGauge7.health7 == 10f){
+                if(HealthGauge7.health7 >= 10f){
                     pointSource.PlayOneShot(pointclip);
                     animator.SetTrigger("Fairy");
                 }
@@ -241,7 +241,7 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 HealthGauge8.health8 += 3.5f;
                 successSource.PlayOneShot(successclip);
-                if(HealthGauge8.health8 == 10f){
+                if(HealthGauge8.health8 >= 10f){
                     pointSource.PlayOneShot(pointclip);
                     animator.SetTrigger("Fairy");
                 }
@@ -270,7 +270,7 @@ public class HPHealthbar : MonoBehaviour
                 Destroy(collision.gameObject);
                 HealthGauge9.health9 += 3.5f;
                 successSource.PlayOneShot(successclip);
-                if(HealthGauge9.health9 == 10f){
+                if(HealthGauge9.health9 >= 10f){
                     pointSource.PlayOneShot(pointclip);
                     animator.SetTrigger("Fairy");
                 }

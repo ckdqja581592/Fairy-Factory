@@ -8,6 +8,7 @@ public class HealthGauge1 : MonoBehaviour
     Image healthBar1;
     float maxHealth = 10f;
     public static float health1;
+
     void Start()
     {
         healthBar1 = GetComponent<Image>();

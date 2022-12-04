@@ -10,12 +10,6 @@ public class MainSoundManager : MonoBehaviour
 
     public AudioSource btnsource;
 
-    public AudioSource successsource;
-
-    public AudioSource failedsource;
-
-    public AudioSource endsource;
-
     public void SSetMusicVolume(float volume)
     {
         mmusicsource.volume = volume;

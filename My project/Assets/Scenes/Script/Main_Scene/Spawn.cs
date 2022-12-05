@@ -13,9 +13,10 @@ public class Spawn : MonoBehaviour
     
     public bool isPause = false;
 
-    void Start()
+    void Awake()
     {
         StartCoroutine(CreatepoopRoutine());
+        isPause = false;
     }
 
     void Update()

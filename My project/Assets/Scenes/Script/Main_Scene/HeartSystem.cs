@@ -15,6 +15,7 @@ public class HeartSystem : MonoBehaviour
 
     public GameObject Spawn;
 
+    public CanvasGroup ScoreHeartGroup;
     public CanvasGroup GameoverGroup;
     void start()
     {
@@ -39,9 +40,10 @@ public class HeartSystem : MonoBehaviour
         else if(life == 3)
         {
             Destroy(GameObject.FindWithTag("HP1"));
-            CanvasGroupOn(GameoverGroup);
-            
             Spawn.GetComponent<Spawn>().IsPause();
+            CanvasGroupOn(GameoverGroup);
+            CanvasGroupOff(ScoreHeartGroup);
+            life =0;
         }
     }
 
@@ -50,5 +52,9 @@ public class HeartSystem : MonoBehaviour
         cg.alpha = 1;
         cg.interactable = true;
         cg.blocksRaycasts = true;
+    }
+    public void CanvasGroupOff(CanvasGroup cg)
+    {
+        cg.alpha = 0;
     }
 }

@@ -28,29 +28,37 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 SceneManager.LoadScene("LoadingScene");
                 break;
 
-                case BTNType.How:
+            case BTNType.ReStart:
+                SceneManager.LoadScene("MainScene");
+                break;
+
+            case BTNType.How:
                 Debug.Log("게임방법");
                 break;
 
-                case BTNType.Option:
+            case BTNType.Option:
                 CanvasGroupOn(optionGroup);
                 CanvasGroupOff(mainGroup);
                 break;
 
-                case BTNType.SoundOn:
+            case BTNType.SoundOn:
                     Debug.Log("사운드on");
                 break;
 
-                case BTNType.SoundOff:
+            case BTNType.SoundOff:
                     Debug.Log("사운드off");
                 break;
 
-                case BTNType.Back:
+            case BTNType.Next:
+                SceneManager.LoadScene("GameOverScene");
+                break;
+
+            case BTNType.Back:
                 CanvasGroupOn(mainGroup);
                 CanvasGroupOff(optionGroup);
                 break;
 
-                case BTNType.Quit:
+            case BTNType.Quit:
                 Application.Quit();
                 Debug.Log("끝내기");
                 break;

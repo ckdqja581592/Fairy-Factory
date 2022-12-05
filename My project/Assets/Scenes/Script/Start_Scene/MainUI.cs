@@ -9,6 +9,8 @@ public enum BTNType{
     SoundOn,
     SoundOff,
     Back,
+    Next,
+    ReStart,
     Quit
 }
 

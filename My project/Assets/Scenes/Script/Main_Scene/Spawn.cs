@@ -11,7 +11,7 @@ public class Spawn : MonoBehaviour
     float SpawnTime;
     
     
-    public bool isPause = false;
+    public static bool isPause = false;
 
     void Awake()
     {

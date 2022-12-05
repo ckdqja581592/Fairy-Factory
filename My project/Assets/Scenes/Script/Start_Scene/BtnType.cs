@@ -11,6 +11,7 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     Vector3 defaultScale;
     public CanvasGroup mainGroup;
     public CanvasGroup optionGroup;
+    public CanvasGroup HowGroup;
 
     public AudioSource msc;
 
@@ -30,10 +31,14 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
             case BTNType.ReStart:
                 SceneManager.LoadScene("MainScene");
+                Score.scoreinAmount = 0;
+                Spawn.isPause = false;
+                Time.timeScale = 1f;
                 break;
 
             case BTNType.How:
-                Debug.Log("게임방법");
+                CanvasGroupOn(HowGroup);
+                CanvasGroupOff(mainGroup);
                 break;
 
             case BTNType.Option:
@@ -56,6 +61,7 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             case BTNType.Back:
                 CanvasGroupOn(mainGroup);
                 CanvasGroupOff(optionGroup);
+                CanvasGroupOff(HowGroup);
                 break;
 
             case BTNType.Quit:

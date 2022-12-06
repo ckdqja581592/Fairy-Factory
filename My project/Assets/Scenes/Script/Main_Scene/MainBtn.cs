@@ -43,6 +43,11 @@ public class MainBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 Application.Quit();
                 Debug.Log("끝내기");
                 break;
+
+            case BTNType.Comeback:
+                SceneManager.LoadScene("StartScene");
+                break;
+
         }
     }
     public void CanvasGroupOn(CanvasGroup cg)

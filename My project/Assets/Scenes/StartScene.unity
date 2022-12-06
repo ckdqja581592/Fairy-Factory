@@ -884,7 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76cb7f4ef1b5f94a9079660cd2c7877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentType: 6
+  currentType: 8
   buttonScale: {fileID: 1438703135}
   mainGroup: {fileID: 0}
   optionGroup: {fileID: 0}

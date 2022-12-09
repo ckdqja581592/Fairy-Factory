@@ -19,7 +19,7 @@ public class SceneLoad : MonoBehaviour
     {
         yield return null;
         AsyncOperation operation = SceneManager.LoadSceneAsync("MainScene");
-        operation.allowSceneActivation = false;
+        //operation.allowSceneActivation = false;
 
         while(!operation.isDone)
         {
@@ -31,7 +31,7 @@ public class SceneLoad : MonoBehaviour
             }else if(progressbar.value >= 0.99f)
             {
                 progressbar.value = Mathf.MoveTowards(progressbar.value, 1f, Time.deltaTime);
-                operation.allowSceneActivation = true;
+                //operation.allowSceneActivation = true;
             }
         }
     }

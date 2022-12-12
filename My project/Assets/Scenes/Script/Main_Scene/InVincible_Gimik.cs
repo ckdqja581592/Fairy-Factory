@@ -22,7 +22,7 @@ public class InVincible_Gimik : MonoBehaviour
     {
         
         
-        if (Score.scoreinAmount >= 1)
+        if (Score.scoreinAmount >= 30)
         {
            
             if (isInvisible)
@@ -42,7 +42,7 @@ public class InVincible_Gimik : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Score.scoreinAmount >= 1)
+        if (Score.scoreinAmount >= 30)
         {
             if (collision.gameObject.CompareTag("Gimik"))
             {

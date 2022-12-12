@@ -12,7 +12,9 @@ public enum BTNType{
     Next,
     ReStart,
     Quit,
-    Comeback
+    Comeback,
+    Howone,
+    Howtwo
 }
 
 public class MainUI : MonoBehaviour

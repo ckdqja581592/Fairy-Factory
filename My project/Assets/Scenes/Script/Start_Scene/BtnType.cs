@@ -12,6 +12,7 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public CanvasGroup mainGroup;
     public CanvasGroup optionGroup;
     public CanvasGroup HowGroup;
+    public CanvasGroup HowtwoGroup;
 
     public AudioSource msc;
 
@@ -70,6 +71,14 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             case BTNType.Quit:
                 Application.Quit();
                 Debug.Log("끝내기");
+                break;
+            case BTNType.Howone:
+                CanvasGroupOn(HowGroup);
+                CanvasGroupOff(HowtwoGroup);
+                break;
+            case BTNType.Howtwo:
+                CanvasGroupOn(HowtwoGroup);
+                CanvasGroupOff(HowGroup);
                 break;
         }
     }

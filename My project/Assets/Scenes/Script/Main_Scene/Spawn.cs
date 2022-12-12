@@ -15,8 +15,8 @@ public class Spawn : MonoBehaviour
 
     void Awake()
     {
-        StartCoroutine(CreatepoopRoutine());
         isPause = false;
+        StartCoroutine(CreatepoopRoutine());
     }
 
     void Update()

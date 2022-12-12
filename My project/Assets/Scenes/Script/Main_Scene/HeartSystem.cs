@@ -29,15 +29,25 @@ public class HeartSystem : MonoBehaviour
     {
         if(life == 1)
         {
-            Destroy(GameObject.FindWithTag("HP3"));
+            Destroy(GameObject.FindWithTag("HP5"));
             life = 1;          
         }
         else if(life == 2)
         {
-            Destroy(GameObject.FindWithTag("HP2"));
+            Destroy(GameObject.FindWithTag("HP4"));
             life = 2;
         }
         else if(life == 3)
+        {
+            Destroy(GameObject.FindWithTag("HP3"));
+            life = 3;
+        }
+        else if(life == 4)
+        {
+            Destroy(GameObject.FindWithTag("HP2"));
+            life = 4;
+        }
+        else if(life == 5)
         {
             Destroy(GameObject.FindWithTag("HP1"));
             Spawn.GetComponent<Spawn>().IsPause();

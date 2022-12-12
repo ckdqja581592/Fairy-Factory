@@ -27,6 +27,9 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             case BTNType.New:
                 SceneManager.LoadScene("LoadingScene");
+                Score.scoreinAmount = 0;
+                Spawn.isPause = false;
+                Time.timeScale = 1f;
                 break;
 
             case BTNType.ReStart:

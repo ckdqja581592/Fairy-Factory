@@ -28,6 +28,7 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             case BTNType.New:
                 SceneManager.LoadScene("LoadingScene");
+                HeartSystem.life = 0;
                 Score.scoreinAmount = 0;
                 Spawn.isPause = false;
                 Time.timeScale = 1f;
@@ -35,6 +36,7 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
             case BTNType.ReStart:
                 SceneManager.LoadScene("MainScene");
+                HeartSystem.life = 0;
                 Score.scoreinAmount = 0;
                 Spawn.isPause = false;
                 Time.timeScale = 1f;

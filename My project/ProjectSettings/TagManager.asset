@@ -19,6 +19,7 @@ TagManager:
   - HP1
   - HP2
   - HP3
+  - Gimik
   layers:
   - Default
   - TransparentFX

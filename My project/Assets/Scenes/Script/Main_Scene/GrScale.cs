@@ -42,9 +42,17 @@ public class GrScale : MonoBehaviour
         {
             Rb.gravityScale = 0.75f;
         }
-        else if(Score.scoreinAmount>=25)
+        else if(Score.scoreinAmount>=25 && Score.scoreinAmount<30)
         {
             Rb.gravityScale = 0.9f;
+        }
+        else if(Score.scoreinAmount>=30 && Score.scoreinAmount<40)
+        {
+            Rb.gravityScale = 0.5f;
+        }
+        else if(Score.scoreinAmount>=40)
+        {
+            Rb.gravityScale = 0.7f;
         }
     }
 }
